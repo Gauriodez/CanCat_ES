@@ -1,0 +1,16 @@
+﻿.centered {
+    margin: auto;
+    width: 80vw;
+}
+.center {
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    overflow-y: auto;
+}
+.thumbnail {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin: auto;
+}
