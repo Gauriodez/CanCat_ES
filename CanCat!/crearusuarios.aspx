@@ -45,7 +45,7 @@
                             <hr />
                             <div class="mb-3">
                                 <asp:Label ID="LabelProduct" CssClass="form-label" runat="server" Text="Nombre Producto" Font-Bold="True"></asp:Label>
-                                <asp:TextBox ID="Product" CssClass="form-control" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="Product" CssClass="form-control" runat="server" />
                             </div>
                             <div class="mb-3">
                                 <asp:Label ID="LabelPrice" CssClass="form-label" runat="server" Text="Precio del Producto" Font-Bold="True"></asp:Label>
@@ -53,8 +53,7 @@
                             </div>
                             <div class="mb-3">
                                 <asp:Label ID="LabelQty" CssClass="form-label" runat="server" Text="Cantidad Producto" Font-Bold="True"></asp:Label>
-                                <asp:TextBox ID="Quantity" CssClass="form-control" runat="server"></asp:TextBox>
-                            </div>
+                                <asp:TextBox ID="Quantity" CssClass="form-control" runat="server" />
                             <div class="mb-3">
                                 <asp:Label ID="LabelImage" CssClass="form-label" runat="server" Text="Imagen Producto" Font-Bold="True"></asp:Label>
                                 <asp:FileUpload ID="PhotoFile" CssClass="form-control" runat="server" />

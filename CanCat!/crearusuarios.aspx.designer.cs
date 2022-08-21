@@ -11,7 +11,7 @@ namespace CanCat_
 {
 
 
-    public partial class CrearUsuarios
+    public partial class crearusuarios
     {
 
         /// <summary>
