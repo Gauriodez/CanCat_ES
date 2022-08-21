@@ -53,7 +53,7 @@ namespace CanCat_
                 double price = Convert.ToDouble(Price.Text.Trim());
                 int qty = Convert.ToInt32(Quantity.Text.Trim());
                 string image = strFileName;
-                int guardado = metodos.Add_Product(product, price, qty, image);
+                int guardado = Metodos.Add_Product(product, price, qty, image);
 
                 if (guardado == 1)
                 {
