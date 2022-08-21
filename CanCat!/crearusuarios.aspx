@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="crearusuarios.aspx.cs" Inherits="CanCat_.CrearUsuarios" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="crearusuarios.aspx.cs" Inherits="CanCat_.crearusuarios" %>
 
 <!DOCTYPE html>
 

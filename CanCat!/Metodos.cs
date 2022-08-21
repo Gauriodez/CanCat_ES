@@ -21,7 +21,7 @@ namespace CanCat_
 {
     public class Metodos
     {
-        //public static MySqlConnection conexion = new MySqlConnection("Server= 127.0.0.1; database=cancat!; Uid=root; pwd=;");
+        public static MySqlConnection conexioness = new MySqlConnection("Server= 127.0.0.1; database=cancat!; Uid=root; pwd=;");
         public const string CartSessionKey = "CartId";
         public const string PetSessionKey = "PetId";
         MySqlConnection conexion = Conexion.ObtenerConexion();
@@ -675,7 +675,7 @@ namespace CanCat_
             
             try
             {
-                conexion.Open;
+                conexioness.Open();
             }
             catch (Exception e)
             {
@@ -683,7 +683,7 @@ namespace CanCat_
             }
 
             MySqlDataAdapter DA = new MySqlDataAdapter();
-            MySqlCommand cmd = new MySqlCommand("SELECT cart.*, productos.Product, productos.Imagen FROM cart INNER JOIN productos ON cart.ProductoId = productos.Id WHERE UsuarioId = @userId;", conexion);
+            MySqlCommand cmd = new MySqlCommand("SELECT cart.*, productos.Product, productos.Imagen FROM cart INNER JOIN productos ON cart.ProductoId = productos.Id WHERE UsuarioId = @userId;", conexioness);
             cmd.Parameters.AddWithValue("@userId", userId);
             cmd.Prepare();
             DA.SelectCommand = cmd;
@@ -697,7 +697,7 @@ namespace CanCat_
                 row["Imagen"] = "<img width='100px' class='thumbnail' src='./images/" + row["Imagen"] + "' />";
             }
 
-            conexion.Close();
+            conexioness.Close();
             return DT;
         }
 
