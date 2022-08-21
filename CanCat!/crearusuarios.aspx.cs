@@ -24,6 +24,7 @@ namespace CanCat_
             catch (Exception ex)
             {
                 Response.Redirect("login");
+
             }
         }
 
